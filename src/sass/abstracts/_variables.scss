@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand&display=swap);
+$font-family: 'Quicksand', sans-serif;
+
+// COLORS
+$color-white: hsla(230, 7%, 100%, 1);
+$color-white-op-60: hsla(230, 7%, 100%, 0.6);
+$color-white-op-50: rgba(255,255,255,0.5);
+$color-white-op-20: hsla(230, 7%, 100%, 0.2);
+
+$color-black: #222222;
+$color-black-op-80: rgba(34, 34, 34, 0.8);
+
+$color-primary: hsla(230, 84%, 63%, 1);
+$color-secondary: hsla(230, 10%, 30%, 1);
+
+$color-grey: #36393f;
+$color-grey-dark: hsla(230,11%,19%,1);
+$color-grey-light: #717171;
+
+$btn-focus-shadow: 0 0 0 1px $color-grey-light, 0 0 0 3px $color-white-op-50;
+$inpt-focus-shadow: 0 0 0 1px $color-grey-light, 0 0 0 3px $color-white-op-50;

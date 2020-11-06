@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  font-size: 62.5% !important; // 1rem = 10px
+  background: $color-grey-dark;
+}
+
+body {
+  font-size: 1.4rem;
+}

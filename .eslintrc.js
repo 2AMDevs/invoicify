@@ -1,86 +1,76 @@
-const fs = require('fs');
-const path = require('path');
-
-const prettierOptions = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
-);
-
 module.exports = {
-  parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['prettier', 'redux-saga', 'react', 'react-hooks', 'jsx-a11y'],
   env: {
-    jest: true,
     browser: true,
-    node: true,
-    es6: true,
+    es6: true
   },
+  extends: ["airbnb"],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
+  },
+  parser: "babel-eslint",
   parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
+    ecmaVersion: 2018,
+    sourceType: "module"
   },
+  plugins: ["react",],
   rules: {
-    'prettier/prettier': ['error', prettierOptions],
-    'arrow-body-style': [2, 'as-needed'],
-    'class-methods-use-this': 0,
-    'import/imports-first': 0,
-    'import/newline-after-import': 0,
-    'import/no-dynamic-require': 0,
-    'import/no-extraneous-dependencies': 0,
-    'import/no-named-as-default': 0,
-    'import/no-unresolved': 2,
-    'import/no-webpack-loader-syntax': 0,
-    'import/prefer-default-export': 0,
-    indent: [
-      2,
-      2,
-      {
-        SwitchCase: 1,
+    "array-bracket-spacing": [2, "never"],
+    "brace-style": [2, "1tbs", { allowSingleLine: false }],
+    "camelcase": [1, {
+      "allow": ["^UNSAFE_"],
+      "ignoreDestructuring": true,
+      "properties": "always",
+    }],
+    "comma-spacing": [1, { before: false, after: true }],
+    "comma-style": [1, "last"],
+    "computed-property-spacing": [1, "never"],
+    "eol-last": [2, "always"],
+    "func-names": [2, "always"],
+    "react/prop-types": [0],
+    "consistent-return": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/destructuring-assignment": [0],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-first-prop-new-line": [1, "multiline"],
+    "react/jsx-tag-spacing": [1, {"beforeSelfClosing": "always"}],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "arrow-parens": [2, "always"],
+    "no-multi-spaces": ["error", { exceptions: { "BinaryExpression": true }, "ignoreEOLComments": true }],
+    "react/jsx-max-props-per-line": [1, { "when": "always" }],
+    "react/jsx-props-no-spreading": [0],
+    "react/jsx-closing-bracket-location": [2, "tag-aligned"],
+    "react/jsx-curly-brace-presence": [0, { "props": "never", "children": "never" }],
+    "jsx-quotes": [2, "prefer-double"],
+    "indent": [2, 2],
+    "key-spacing": [1, { beforeColon: false, afterColon: true }],
+    "new-cap": 2,
+    "no-inline-comments": 2,
+    "no-multiple-empty-lines": 2,
+    "quotes": [2, "single", "avoid-escape"],
+    "semi-spacing": [0, { before: false, after: true }],
+    "semi": [2, "never"],
+    "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always"
+    }],
+    "space-unary-ops": [2, {"words": true, "nonwords": false}],
+    "spaced-comment": ["error", "always", {
+      "line": {
+        "markers": ["/"],
+        "exceptions": ["-", "+"]
       },
-    ],
-    'jsx-a11y/aria-props': 2,
-    'jsx-a11y/heading-has-content': 0,
-    'jsx-a11y/label-has-associated-control': [
-      2,
-      {
-        controlComponents: ['Input'],
-      },
-    ],
-    'jsx-a11y/label-has-for': 0,
-    'jsx-a11y/mouse-events-have-key-events': 2,
-    'jsx-a11y/role-has-required-aria-props': 2,
-    'jsx-a11y/role-supports-aria-props': 2,
-    'max-len': 0,
-    'newline-per-chained-call': 0,
-    'no-confusing-arrow': 0,
-    'no-console': 1,
-    'no-unused-vars': 2,
-    'no-use-before-define': 0,
-    'prefer-template': 2,
-    'react/destructuring-assignment': 0,
-    'react-hooks/rules-of-hooks': 'error',
-    'react/jsx-closing-tag-location': 0,
-    'react/forbid-prop-types': 0,
-    'react/jsx-first-prop-new-line': [2, 'multiline'],
-    'react/jsx-filename-extension': 0,
-    'react/jsx-no-target-blank': 0,
-    'react/jsx-uses-vars': 2,
-    'react/require-default-props': 0,
-    'react/require-extension': 0,
-    'react/self-closing-comp': 0,
-    'react/sort-comp': 0,
-    'redux-saga/no-yield-in-race': 2,
-    'redux-saga/yield-effects': 2,
-    'require-yield': 0,
-  },
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: './internals/webpack/webpack.prod.babel.js',
-      },
-    },
-  },
+      "block": {
+        "markers": ["!"],
+        "exceptions": ["*"],
+        "balanced": true
+      }
+    }]
+  }
 };

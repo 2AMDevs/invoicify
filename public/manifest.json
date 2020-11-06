@@ -1,0 +1,26 @@
+{
+  "short_name": "Gr",
+  "name": "Grimoire",
+  "description": "Grimoire Web App",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./img/fav/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "transparent",
+  "lang": "en-us",
+  "scope": "/",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

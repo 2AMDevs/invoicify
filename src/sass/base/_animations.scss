@@ -1,0 +1,159 @@
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animation-scale-up {
+  animation: scaleUp 0.5s forwards;
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animation-scale-down {
+  animation: scaleDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation-slide-down {
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animation-fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation-slide-up {
+  animation: slideUp 0.5s forwards;
+}
+
+@keyframes blurDown {
+  0% {
+    filter: blur(15px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+@keyframes blurUpDown {
+  0% {
+    filter: blur(0);
+  }
+
+  50% {
+    filter: blur(15px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+// Transition group animations
+.scale-down-appear {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.scale-down-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 600ms ease-out;
+}
+
+.scale-down-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.scale-down-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-out 300ms;
+}
+
+.scale-down-exit {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.scale-down-exit-active {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+}

@@ -1,0 +1,14 @@
+@import '../../../sass/abstracts.scss';
+
+.loader {
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  animation: scaleUpDown 2s infinite forwards;
+
+  border: 10px solid $color-primary;
+  background: transparent;
+}
