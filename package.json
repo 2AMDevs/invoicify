@@ -1,7 +1,7 @@
 {
   "name": "invoicify",
   "version": "0.1.0",
-  "homepage": "https://2amdevs.github.io/invoicify/",
+  "homepage": "https://invoicify.netlify.app",
   "repository": {
     "type": "git",
     "url": "git://github.com/2AMDevs/invoicify.git"
