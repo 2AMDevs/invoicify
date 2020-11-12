@@ -22,7 +22,8 @@
 
     &__nav {
       padding: 5rem 0;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(5rem) hue-rotate(-5deg);
+      box-shadow: 0 0 3rem $color-black-op-80;
       font-size: 2rem;
       color: $color-white;
       font-weight: 800;
@@ -48,11 +49,14 @@
     &__main {
       margin-top: 3rem;
       color: $color-white;
-      padding: 0 5rem;
+      display: flex;
 
       &__text {
         display: flex;
         flex-direction: column;
+        backdrop-filter: blur(5rem) hue-rotate(-5deg);
+        padding: 1rem 1rem 1rem 5rem;
+        box-shadow: 0 0 3rem $color-black-op-80;
 
         &__title {
           font-size: 6rem;
