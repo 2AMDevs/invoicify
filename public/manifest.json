@@ -1,7 +1,7 @@
 {
-  "short_name": "Gr",
-  "name": "Grimoire",
-  "description": "Grimoire Web App",
+  "short_name": "Invoicify",
+  "name": "Invoicify",
+  "description": "Invoicify Landing",
   "icons": [
     {
       "src": "favicon.ico",

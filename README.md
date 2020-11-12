@@ -1,5 +1,1 @@
-# Grimoire web app
-```
-yarn install
-yarn start
-```
+# Invoicify Landing Page
