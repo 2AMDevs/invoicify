@@ -4,15 +4,112 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
 
+  &__gh-link {
+    position: absolute;
+    bottom: 2rem;
+    right: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 4.5rem;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3rem $color-black;
+
+    &__img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &__bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    animation:
+      scaleDown 2.5s forwards,
+      blurDown 2s forwards;
+  }
+
   &__content {
-    font-size: 5rem;
-    font-weight: 800;
-    height: 50rem;
-    width: 80rem;
-    background: linear-gradient(to right, rgb(161, 128, 189) 0%, rgb(6, 134, 242) 100%);
+    position: absolute;
+    width: 100%;
+
+    &__nav {
+      padding: 5rem 0;
+      backdrop-filter: blur(5rem) hue-rotate(-5deg);
+      box-shadow: 0 0 3rem $color-black-op-80;
+      font-size: 2rem;
+      color: $color-white;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &__help-btn {
+        border-radius: 5rem;
+        padding: 1rem 3rem;
+        background-color: $color-purple-op-80;
+      }
+    }
+
+    &__main {
+      margin-top: 3rem;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+
+      &__download-section {
+        margin-top: 3rem;
+        width: 15rem;
+        padding: 1rem 1rem 1rem 5rem;
+
+        &__dwnld-btn {
+          border-radius: 5rem;
+          padding: 1rem 3rem;
+          background-color: $color-magenta-op-80;
+          font-size: 2rem;
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(5rem) hue-rotate(-5deg);
+        padding: 1rem 1rem 1rem 5rem;
+        box-shadow: 0 0 3rem $color-black-op-80;
+        width: 80rem;
+
+        &__title {
+          font-size: 6rem;
+          font-weight: 300;
+          color: $color-white-op-80;
+        }
+
+        &__sub-title {
+          font-size: 6rem;
+          font-weight: 600;
+          color: $color-white-op-80;
+
+          &--small {
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white-op-80;
+          }
+        }
+      }
+    }
   }
 }
