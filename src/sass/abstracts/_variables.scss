@@ -3,6 +3,7 @@ $font-family: 'Quicksand', sans-serif;
 
 // COLORS
 $color-white: hsla(230, 7%, 100%, 1);
+$color-white-op-80: hsla(230, 7%, 100%, 0.8);
 $color-white-op-60: hsla(230, 7%, 100%, 0.6);
 $color-white-op-50: rgba(255,255,255,0.5);
 $color-white-op-20: hsla(230, 7%, 100%, 0.2);
@@ -18,7 +19,7 @@ $color-grey-dark: hsla(230,11%,19%,1);
 $color-grey-light: #717171;
 
 $color-purple: rgba(88, 45, 210, 1);
-$color-purple-80: rgba(88, 45, 210, 0.8);
+$color-purple-op-80: rgba(88, 45, 210, 0.8);
 
 $btn-focus-shadow: 0 0 0 1px $color-grey-light, 0 0 0 3px $color-white-op-50;
 $inpt-focus-shadow: 0 0 0 1px $color-grey-light, 0 0 0 3px $color-white-op-50;

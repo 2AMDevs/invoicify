@@ -21,20 +21,50 @@
     width: 100%;
 
     &__nav {
-      padding: 4rem 0;
+      padding: 5rem 0;
       backdrop-filter: blur(10px);
-      font-size: 2.8rem;
+      font-size: 2rem;
       color: $color-white;
       font-weight: 800;
       display: flex;
-      justify-content: space-around;
       align-items: center;
       width: 100%;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        justify-content: space-between;
+        width: 100%;
+      }
 
       &__help-btn {
         border-radius: 5rem;
         padding: 1rem 3rem;
-        background-color: $color-purple-80;
+        background-color: $color-purple-op-80;
+      }
+    }
+
+    &__main {
+      margin-top: 3rem;
+      color: $color-white;
+      padding: 0 5rem;
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+          font-size: 6rem;
+          font-weight: 300;
+          color: $color-white-op-80;
+        }
+
+        &__sub-title {
+          font-size: 6rem;
+          font-weight: 600;
+          color: $color-white-op-80;
+        }
       }
     }
   }

@@ -14,15 +14,23 @@ const Home = () => (
     />
     <div className="home__content">
       <div className="home__content__nav">
-        <h1>Invoicify</h1>
-        <Link to="/download">
-          <Button
-            secondary
-            className="home__content__nav__help-btn"
-          >
-            Why Invoicify?
-          </Button>
-        </Link>
+        <div className="home__content__nav__header">
+          <h1>Invoicify</h1>
+          <Link to="/download">
+            <Button
+              secondary
+              className="home__content__nav__help-btn"
+            >
+              Why Invoicify?
+            </Button>
+          </Link>
+        </div>
+      </div>
+      <div className="home__content__main">
+        <div className="home__content__main__text">
+          <h1 className="home__content__main__text__title">Extremely customizable</h1>
+          <h1 className="home__content__main__text__sub-title">& relaiable invoice software</h1>
+        </div>
       </div>
       {/* <Link to="/download">
         <Button
