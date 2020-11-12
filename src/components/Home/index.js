@@ -30,6 +30,7 @@ const Home = () => (
         <div className="home__content__main__text">
           <h1 className="home__content__main__text__title">Extremely customizable</h1>
           <h1 className="home__content__main__text__sub-title">& relaiable invoice software</h1>
+          <h1 className="home__content__main__text__sub-title--small">A complete invoice solution for businesses</h1>
         </div>
         <div className="home__content__main__download-section">
           <Link to="/download">

@@ -83,6 +83,12 @@
           font-size: 6rem;
           font-weight: 600;
           color: $color-white-op-80;
+
+          &--small {
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white-op-80;
+          }
         }
       }
     }
