@@ -1,6 +1,5 @@
 const urls = {
-  login: '/login',
-  signup: '/login?signup=true',
+  download: '/download',
   home: '/home',
 }
 

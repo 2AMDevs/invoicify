@@ -31,7 +31,7 @@ const Routes = ({ location }) => (
         <Switch location={location}>
           <Route
             exact
-            path={urls.login}
+            path={urls.download}
             component={Login}
           />
           <Route

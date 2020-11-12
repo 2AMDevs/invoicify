@@ -4,15 +4,21 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+  position: relative;
+
+  &__bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    animation:
+      scaleDown 2.5s forwards,
+      blurDown 2s forwards;
+  }
 
   &__content {
     font-size: 5rem;
+    position: absolute;
     font-weight: 800;
-    height: 50rem;
-    width: 80rem;
-    background: linear-gradient(to right, rgb(161, 128, 189) 0%, rgb(6, 134, 242) 100%);
   }
 }
