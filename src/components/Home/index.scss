@@ -6,6 +6,25 @@
   display: flex;
   position: absolute;
 
+  &__gh-link {
+    position: absolute;
+    bottom: 2rem;
+    right: 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 4.5rem;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3rem $color-black;
+
+    &__img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
   &__bg-img {
     height: 100vh;
     width: 100vw;
