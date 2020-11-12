@@ -13,14 +13,25 @@ const Home = () => (
       alt="swirrrrrrrrrrrrl"
     />
     <div className="home__content">
-      <Link to="/download">
+      <div className="home__content__nav">
+        <h1>Invoicify</h1>
+        <Link to="/download">
+          <Button
+            secondary
+            className="home__content__nav__help-btn"
+          >
+            Why Invoicify?
+          </Button>
+        </Link>
+      </div>
+      {/* <Link to="/download">
         <Button
           secondary
           className="home__content__dwnld-btn"
         >
           Download
         </Button>
-      </Link>
+      </Link> */}
     </div>
   </div>
 )
