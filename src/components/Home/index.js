@@ -31,15 +31,17 @@ const Home = () => (
           <h1 className="home__content__main__text__title">Extremely customizable</h1>
           <h1 className="home__content__main__text__sub-title">& relaiable invoice software</h1>
         </div>
+        <div className="home__content__main__download-section">
+          <Link to="/download">
+            <Button
+              secondary
+              className="home__content__main__download-section__dwnld-btn"
+            >
+              Download
+            </Button>
+          </Link>
+        </div>
       </div>
-      {/* <Link to="/download">
-        <Button
-          secondary
-          className="home__content__dwnld-btn"
-        >
-          Download
-        </Button>
-      </Link> */}
     </div>
   </div>
 )
