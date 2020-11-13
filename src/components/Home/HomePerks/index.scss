@@ -3,12 +3,18 @@
 .home-perks {
   padding: 3rem 2rem;
   position: relative;
+  width: 100%;
+  height: 100%;
+
+  $card-width: 26rem;
+  $card-height: 24rem;
+  $card-radius: 10rem;
 
   &__card {
     color: $color-white;
-    width: 16rem;
-    height: 14rem;
-    border-radius: 5rem;
+    width: $card-width;
+    height: $card-height;
+    border-radius: $card-radius;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,17 +41,37 @@
 
   .purple-card {
     background-color: $color-purple-op-80;
-    position: relative;
+    position: absolute;
+    left: 15%;
+    top: 5%;
 
     &:after {
       width: 105%;
       height: 105%;
-      border-radius: 5rem;
+      border-radius: $card-radius;
       content: "";
       position: absolute;
       top: 0;
       transform: rotate(-25deg);
       background-color: $color-purple-op-50;
+    }
+  }
+
+  .orange-card {
+    background-color: $color-orange-op-80;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+
+    &:after {
+      width: 105%;
+      height: 105%;
+      border-radius: $card-radius;
+      content: "";
+      position: absolute;
+      top: 0;
+      transform: rotate(-25deg);
+      background-color: $color-orange-op-50;
     }
   }
 }

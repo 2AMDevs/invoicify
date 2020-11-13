@@ -10,7 +10,18 @@ const HomePerks = () => (
           100%
         </div>
         <div className="home-perks__card__content__title">
-          Open source
+          Open Source
+        </div>
+      </div>
+    </div>
+
+    <div className="home-perks__card orange-card">
+      <div className="home-perks__card__content">
+        <div className="home-perks__card__content__header">
+          100%
+        </div>
+        <div className="home-perks__card__content__title">
+          Free of cost
         </div>
       </div>
     </div>
