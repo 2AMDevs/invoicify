@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Button } from '../Elements'
+import HomePerks from './HomePerks'
 
 import './index.scss'
 
@@ -26,21 +27,27 @@ const Home = () => (
           </Link>
         </div>
       </div>
-      <div className="home__content__main">
-        <div className="home__content__main__text">
-          <h1 className="home__content__main__text__title">Extremely customizable</h1>
-          <h1 className="home__content__main__text__sub-title">& relaiable invoice software</h1>
-          <h1 className="home__content__main__text__sub-title--small">A complete invoice solution for businesses</h1>
+      <div className="home__content__wrapper">
+        <div className="home__content__main">
+          <div className="home__content__main__text">
+            <h1 className="home__content__main__text__title">Extremely customizable</h1>
+            <h1 className="home__content__main__text__sub-title">& relaiable invoice software</h1>
+            <h1 className="home__content__main__text__sub-title--small">A complete invoice solution for businesses</h1>
+          </div>
+          <div className="home__content__main__download-section">
+            <Link to="/download">
+              <Button
+                secondary
+                className="home__content__main__download-section__dwnld-btn"
+              >
+                Download
+              </Button>
+            </Link>
+          </div>
         </div>
-        <div className="home__content__main__download-section">
-          <Link to="/download">
-            <Button
-              secondary
-              className="home__content__main__download-section__dwnld-btn"
-            >
-              Download
-            </Button>
-          </Link>
+
+        <div className="home__content__perks">
+          <HomePerks />
         </div>
       </div>
     </div>

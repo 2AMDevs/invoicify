@@ -1,0 +1,57 @@
+@import '../../../sass/abstracts.scss';
+
+.home-perks {
+  padding: 3rem 2rem;
+  position: relative;
+
+  &__card {
+    color: $color-white;
+    width: 16rem;
+    height: 14rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__header, &__title {
+        font-size: 1.8rem;
+        z-index: 1;
+        letter-spacing: 0.3rem;
+      }
+
+      &__title {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .purple-card {
+    background-color: $color-purple-op-80;
+    position: relative;
+
+    &:after {
+      width: 105%;
+      height: 105%;
+      border-radius: 5rem;
+      content: "";
+      position: absolute;
+      top: 0;
+      transform: rotate(-25deg);
+      background-color: $color-purple-op-50;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .home-perks {
+
+  }
+}
