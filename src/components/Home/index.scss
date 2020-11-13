@@ -113,3 +113,22 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .home {
+    &__content {
+      &__nav {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+
+        &__help-btn {
+          padding: 0.5rem 1rem;
+        }
+
+        &__header {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
