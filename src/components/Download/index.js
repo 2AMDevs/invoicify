@@ -4,6 +4,8 @@ import { Button, Loader } from '../Elements'
 
 import ReleaseNotes from './ReleaseNotes'
 
+import WinLogo from '../../assets/windows.svg'
+
 import './index.scss'
 
 const Download = () => {
@@ -12,7 +14,7 @@ const Download = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const data = await fetch('http://localhost:3232/invoicify-release')
+      const data = await fetch('https://api.aashutosh.dev/invoicify-release')
       const jsonData = await data.json()
       setRn(jsonData)
       setLatestAsset(jsonData[0].assets[0])
@@ -42,11 +44,16 @@ const Download = () => {
                 primary
                 className="download-box__content__input-section__submit"
               >
-                Download for Windows
-                {latestAsset.size ? (
+                Download for
+                {' '}
+                <img className="inline-icon" alt="Windows Logo" src={WinLogo} />
+                {latestAsset?.size ? (
                   <h5>
-                    Size:
+                    {rn[0].tag_name}
+                    {' '}
+                    (Size:
                     {` ${(latestAsset.size / (1024 * 1024)).toFixed(2)} MB`}
+                    )
                   </h5>
                 ) : '' }
               </Button>

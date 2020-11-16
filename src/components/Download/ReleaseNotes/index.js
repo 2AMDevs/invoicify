@@ -9,7 +9,7 @@ const ReleaseNotes = ({ notes }) => (
       Release Notes
     </h2>
     <br />
-    {(notes.slice(0, 4).map((release) => (
+    {(notes?.slice(0, 4)?.map((release) => (
       <div key={release.node_id}>
         <ReactMarkdown>{release.body}</ReactMarkdown>
         <br />

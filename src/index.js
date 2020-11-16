@@ -16,6 +16,3 @@ ReactDOM.render(
 
 // unregister() to register() below.
 serviceWorker.unregister()
-
-// @todo @aashutoshrathi we need fav
-// @todo @aashutoshrathi review the manifest

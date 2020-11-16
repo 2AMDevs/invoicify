@@ -39,6 +39,7 @@
       background: $color-grey-dark;
       transition: margin 0.4s ease-in-out;
 
+
       &__content {
         width: 100%;
         padding: 2rem 5rem;
@@ -49,7 +50,7 @@
         }
 
         &__input-section {
-          margin-top: 5rem;
+          margin-top: 4rem;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -73,20 +74,46 @@
   }
 }
 
+.inline-icon {
+  width: 1em;
+  display: inline;
+  margin-right: 3rem;
+  color: white;
+}
+
 @media screen and (max-width: 948px) {
   .download-container {
     &__wrapper {
+      margin: 2rem 0;
+      padding-top: 2rem;
       width: 80%;
-      height: 100%;
+      height: 90%;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
       .download-box {
-        height: 70%;
+        height: 60%;
         width: 60%;
         text-align: center;
         padding: 0 12.5%;
+
+        &__content {
+          width: 100%;
+          padding: 2rem 2rem;
+
+          &__header {
+            font-size: 3rem;
+            text-align: center;
+          }
+
+          &__input-section {
+            button {
+              margin-top: 1rem;
+              width: 20rem;
+            }
+          }
+        }
       }
     }
 
