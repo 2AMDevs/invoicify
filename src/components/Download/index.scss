@@ -58,6 +58,12 @@
           button {
             margin-top: 2rem;
             width: 25rem;
+            height: 5rem;
+          }
+
+          &__subtext {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
           }
         }
       }
@@ -77,7 +83,7 @@
 .inline-icon {
   width: 1em;
   display: inline;
-  margin-right: 3rem;
+  vertical-align: baseline;
   color: white;
 }
 
