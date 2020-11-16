@@ -1,6 +1,6 @@
 @import '../../sass/abstracts.scss';
 
-.login-container {
+.download-container {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -21,7 +21,7 @@
 
   &__wrapper {
     height: 50rem;
-    width: 80rem;
+    width: 90rem;
     position: absolute;
     animation: slideDown 1.5s forwards;
     background: $color-black-op-80;
@@ -29,24 +29,14 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    color: $color-white;
 
-    .left-collapse {
-      margin-left: -50%;
-      transition: margin 0.4s ease-in-out;
-    }
-
-    .right-collapse {
-      margin-right: -50%;
-      transition: margin 0.4s ease-in-out;
-    }
-
-    .login-box {
+    .download-box {
       height: 100%;
-      width: 50%;
+      width: 45%;
       display: flex;
       justify-content: center;
       background: $color-grey-dark;
-      color: $color-white;
       transition: margin 0.4s ease-in-out;
 
       &__content {
@@ -55,7 +45,7 @@
 
         &__header {
           font-size: 5rem;
-          padding: 0 1.3rem;
+          text-align: center;
         }
 
         &__input-section {
@@ -64,7 +54,7 @@
           flex-direction: column;
           align-items: center;
 
-          input, button {
+          button {
             margin-top: 2rem;
             width: 25rem;
           }
@@ -72,11 +62,36 @@
       }
     }
 
-    .login-oauth {
+    .changelog {
+      padding: 1rem 3rem;
       position: relative;
       height: 100%;
-      width: 50%;
+      width: 55%;
       transition: margin 0.4s ease-in-out;
+      overflow: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .download-container {
+    &__wrapper {
+      width: 80%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .download-box {
+        height: 70%;
+        width: 60%;
+        text-align: center;
+        padding: 0 12.5%;
+      }
+    }
+
+    .changelog {
+      width: 80%;
     }
   }
 }

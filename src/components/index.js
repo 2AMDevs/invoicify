@@ -1,8 +1,8 @@
 import Home from './Home'
-import Login from './Login'
+import Download from './Download'
 
 export * from './Elements'
 
 export {
-  Home, Login,
+  Home, Download,
 }
