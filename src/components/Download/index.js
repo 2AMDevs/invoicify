@@ -14,7 +14,7 @@ const Download = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const data = await fetch('https://api.aashutosh.dev/invoicify-release')
+      const data = await fetch('https://api.github.com/repos/microsoft/terminal/releases')
       const jsonData = await data.json()
       setRn(jsonData)
       setLatestAsset(jsonData[0].assets[0])
@@ -47,25 +47,31 @@ const Download = () => {
                 <h3>
                   Download for
                   {' '}
-                  <img className="inline-icon" alt="Windows Logo" src={WinLogo} />
+                  <img
+                    className="inline-icon"
+                    alt="Windows Logo"
+                    src={WinLogo}
+                  />
 
                 </h3>
-                <p className="download-box__content__input-section__subtext">{latestAsset?.size ? (
-                  <h4>
-                    {rn[0].tag_name}
-                    {' '}
-                    (Size:
-                    {` ${(latestAsset.size / (1024 * 1024)).toFixed(2)} MB`}
-                    )
-                  </h4>
-                ) : '' }</p>
+                <p className="download-box__content__input-section__subtext">
+                  {latestAsset?.size ? (
+                    <h4>
+                      {rn[0].tag_name}
+                      {' '}
+                      (Size:
+                      {` ${(latestAsset.size / (1024 * 1024)).toFixed(2)} MB`}
+                      )
+                    </h4>
+                  ) : '' }
+                </p>
               </Button>
             </div>
           </div>
         </div>
         <br />
         <div className="changelog">
-          {!rn ? <Loader /> : <ReleaseNotes notes={rn}/>}
+          {!rn ? <Loader /> : <ReleaseNotes notes={rn} />}
         </div>
       </div>
     </div>

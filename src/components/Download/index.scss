@@ -62,6 +62,7 @@
           }
 
           &__subtext {
+            margin-top: 0.6rem;
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
           }
@@ -77,13 +78,17 @@
       transition: margin 0.4s ease-in-out;
       overflow: auto;
     }
+
+    .changelog > * > a {
+      color: whitesmoke;
+    }
   }
 }
 
 .inline-icon {
-  width: 1em;
+  width: 1.17em;
   display: inline;
-  vertical-align: baseline;
+  vertical-align: bottom;
   color: white;
 }
 
