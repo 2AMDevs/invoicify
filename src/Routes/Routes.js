@@ -2,11 +2,10 @@ import React from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import ProtectedRoute from './ProtectedRoute'
 
 import { urls } from '../constants'
 
-import { Home, Login } from '../components'
+import { Home, Download } from '../components'
 
 const Routes = ({ location }) => (
   <div
@@ -32,14 +31,14 @@ const Routes = ({ location }) => (
           <Route
             exact
             path={urls.download}
-            component={Login}
+            component={Download}
           />
           <Route
             exact
             path="/"
             component={Home}
           />
-          <ProtectedRoute
+          <Route
             exact
             path={urls.home}
             component={Home}

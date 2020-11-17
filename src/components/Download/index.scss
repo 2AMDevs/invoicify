@@ -1,0 +1,135 @@
+@import '../../sass/abstracts.scss';
+
+.download-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+
+  &__bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    animation:
+      scaleDown 2.5s forwards,
+      blurDown 2s forwards;
+  }
+
+  &__wrapper {
+    height: 50rem;
+    width: 90rem;
+    position: absolute;
+    animation: slideDown 1.5s forwards;
+    background: $color-black-op-80;
+    box-shadow: 0 0 5px $color-black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: $color-white;
+
+    .download-box {
+      height: 100%;
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      background: $color-grey-dark;
+      transition: margin 0.4s ease-in-out;
+
+
+      &__content {
+        width: 100%;
+        padding: 2rem 5rem;
+
+        &__header {
+          font-size: 5rem;
+          text-align: center;
+        }
+
+        &__input-section {
+          margin-top: 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          button {
+            margin-top: 2rem;
+            width: 25rem;
+            height: 5rem;
+          }
+
+          &__subtext {
+            margin-top: 0.6rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+    }
+
+    .changelog {
+      padding: 1rem 3rem;
+      position: relative;
+      height: 100%;
+      width: 55%;
+      transition: margin 0.4s ease-in-out;
+      overflow: auto;
+    }
+
+    .changelog > * > a {
+      color: whitesmoke;
+    }
+  }
+}
+
+.inline-icon {
+  width: 1.17em;
+  display: inline;
+  vertical-align: bottom;
+  color: white;
+}
+
+@media screen and (max-width: 948px) {
+  .download-container {
+    &__wrapper {
+      margin: 2rem 0;
+      padding-top: 2rem;
+      width: 80%;
+      height: 90%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .download-box {
+        height: 60%;
+        width: 60%;
+        text-align: center;
+        padding: 0 12.5%;
+
+        &__content {
+          width: 100%;
+          padding: 2rem 2rem;
+
+          &__header {
+            font-size: 3rem;
+            text-align: center;
+          }
+
+          &__input-section {
+            button {
+              margin-top: 1rem;
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+
+    .changelog {
+      width: 80%;
+    }
+  }
+}

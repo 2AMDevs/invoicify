@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
-import { Routes } from './Routes'
+import Routes from './Routes'
 import * as serviceWorker from './serviceWorker'
 
 import './sass/main.scss'
@@ -16,6 +16,3 @@ ReactDOM.render(
 
 // unregister() to register() below.
 serviceWorker.unregister()
-
-// @todo @aashutoshrathi we need fav
-// @todo @aashutoshrathi review the manifest
