@@ -39,33 +39,35 @@ const Download = () => {
               Get Invoicify for your PC
             </span>
             <div className="download-box__content__input-section">
-              <Button
-                type="submit"
-                primary
-                className="download-box__content__input-section__submit"
-              >
-                <h3>
-                  Download for
-                  {' '}
-                  <img
-                    className="inline-icon"
-                    alt="Windows Logo"
-                    src={WinLogo}
-                  />
+              <a href={latestAsset.browser_download_url} download>
+                <Button
+                  type="submit"
+                  primary
+                  className="download-box__content__input-section__submit"
+                >
+                  <h3>
+                    Download for
+                    {' '}
+                    <img
+                      className="inline-icon"
+                      alt="Windows Logo"
+                      src={WinLogo}
+                    />
 
-                </h3>
-                <p className="download-box__content__input-section__subtext">
-                  {latestAsset?.size ? (
-                    <h4>
-                      {rn[0].tag_name}
-                      {' '}
-                      (Size:
-                      {` ${(latestAsset.size / (1024 * 1024)).toFixed(2)} MB`}
-                      )
-                    </h4>
-                  ) : '' }
-                </p>
-              </Button>
+                  </h3>
+                  <p className="download-box__content__input-section__subtext">
+                    {latestAsset?.size ? (
+                      <h4>
+                        {rn[0].tag_name}
+                        {' '}
+                        (Size:
+                        {` ${(latestAsset.size / (1024 * 1024)).toFixed(2)} MB`}
+                        )
+                      </h4>
+                    ) : '' }
+                  </p>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
