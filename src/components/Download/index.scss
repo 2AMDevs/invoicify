@@ -14,9 +14,8 @@
     width: 100vw;
     object-fit: cover;
     z-index: -1;
-    animation:
-      scaleDown 2.5s forwards,
-      blurDown 2s forwards;
+    filter: blur(0.5rem);
+    animation: scaleDown 2.5s forwards;
   }
 
   &__wrapper {
@@ -71,16 +70,12 @@
     }
 
     .changelog {
-      padding: 1rem 3rem;
+      padding: 1rem 0 0 3rem;
       position: relative;
       height: 100%;
       width: 55%;
       transition: margin 0.4s ease-in-out;
       overflow: auto;
-    }
-
-    .changelog > * > a {
-      color: whitesmoke;
     }
   }
 }
