@@ -16,7 +16,7 @@ const Home = () => (
     <div className="home__content">
       <div className="home__content__nav">
         <div className="home__content__nav__header">
-          <h1>Invoicify</h1>
+          <h1 className="home__content__nav__header__brand">Invoicify</h1>
           <Link to="/download">
             <Button
               secondary

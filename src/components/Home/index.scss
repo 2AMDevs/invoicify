@@ -66,6 +66,10 @@
         padding: 0 5rem;
         justify-content: space-between;
         width: 100%;
+
+        &__brand {
+          letter-spacing: 0.3rem;
+        }
       }
 
       &__help-btn {

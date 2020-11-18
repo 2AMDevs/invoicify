@@ -1,21 +1,30 @@
 import React from 'react'
 
 import ReactMarkdown from 'react-markdown'
+import 'github-markdown-css'
+
+import './index.scss'
 
 const ReleaseNotes = ({ notes }) => (
-  <>
-    <h2>
-      <span role="img" aria-label="Notes">📝</span>
+  <div className="release-notes">
+    <div className="release-notes__header">
       Release Notes
-    </h2>
+    </div>
     <br />
-    {(notes?.slice(0, 4)?.map((release) => (
-      <div key={release.node_id}>
-        <ReactMarkdown>{release.body}</ReactMarkdown>
-        <br />
-      </div>
-    )))}
-  </>
+    <div className="release-notes__body">
+      {(notes?.slice(0, 4)?.map((release) => (
+        <div
+          key={release.node_id}
+          className="markdown-body"
+        >
+          <ReactMarkdown allowDangerousHtml>
+            {release.body}
+          </ReactMarkdown>
+          <br />
+        </div>
+      )))}
+    </div>
+  </div>
 )
 
 export default ReleaseNotes

@@ -1,0 +1,21 @@
+@import '../../../sass/abstracts.scss';
+
+.release-notes {
+  height: 100%;
+  overflow: hidden;
+
+  &__header {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__body {
+    overflow-y: scroll;
+    height: 90%;
+
+    .markdown-body {
+      color: $color-white;
+    }
+  }
+}
