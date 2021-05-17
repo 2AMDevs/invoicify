@@ -8,11 +8,6 @@ import './index.scss'
 
 const Home = () => (
   <div className="home">
-    <img
-      className="home__bg-img"
-      src="img/home-bg-swirl.jpg"
-      alt="swirrrrrrrrrrrrl"
-    />
     <div className="home__content">
       <div className="home__content__nav">
         <div className="home__content__nav__header">

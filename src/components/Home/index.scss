@@ -1,4 +1,4 @@
-@import '../../sass/abstracts.scss';
+@import "../../sass/abstracts.scss";
 
 .home {
   height: 100vh;
@@ -25,16 +25,6 @@
     }
   }
 
-  &__bg-img {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: -1;
-    animation:
-      scaleDown 2.5s forwards,
-      blurDown 2s forwards;
-  }
-
   &__content {
     position: absolute;
     width: 100%;
@@ -50,10 +40,10 @@
     }
 
     &__nav {
-      padding: 5rem 0;
+      padding: 2rem 0;
       backdrop-filter: blur(5rem) hue-rotate(-5deg);
       box-shadow: 0 0 3rem $color-black-op-80;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: $color-white;
       font-weight: 800;
       display: flex;
@@ -156,7 +146,8 @@
           width: 80%;
           padding-left: 2rem;
 
-          &__title, &__sub-title {
+          &__title,
+          &__sub-title {
             font-size: 2.4rem;
 
             &--small {
