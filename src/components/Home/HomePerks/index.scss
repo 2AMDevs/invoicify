@@ -1,7 +1,6 @@
-@import '../../../sass/abstracts.scss';
+@import "../../../sass/abstracts.scss";
 
 .home-perks {
-  padding: 3rem 2rem;
   position: relative;
   width: 100%;
   height: 100%;
@@ -25,7 +24,8 @@
       flex-direction: column;
       align-items: center;
 
-      &__header, &__title {
+      &__header,
+      &__title {
         font-size: 1.8rem;
         z-index: 1;
         letter-spacing: 0.3rem;
