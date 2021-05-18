@@ -1,39 +1,10 @@
 @import "../../sass/abstracts.scss";
 
 .home {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  position: absolute;
-
-  &__gh-link {
-    position: absolute;
-    bottom: 2rem;
-    right: 5rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 4.5rem;
-    background-color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0.5rem $color-black;
-
-    &__img {
-      height: 4rem;
-      width: 4rem;
-    }
-  }
-
   &__content {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
 
     &__wrapper {
       display: flex;
@@ -64,14 +35,33 @@
         align-items: center;
         padding: 0 5rem;
         justify-content: space-between;
+        position: relative;
         width: 100%;
 
         &__brand {
           letter-spacing: 0.3rem;
         }
+
+        &__github {
+          position: absolute;
+          right: 19rem;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 2rem;
+          border: solid 0.2rem $color-white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 0.5rem $color-black;
+
+          &__img {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
       }
 
-      &__help-btn {
+      &__download-btn {
         border-radius: 5rem;
         padding: 1rem 3rem;
         background-color: $color-purple-op-80;
@@ -82,12 +72,6 @@
       margin-top: 3rem;
       color: $color-white;
       display: flex;
-      overflow: scroll hidden;
-      height: max-content;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
 
       &__img {
         width: 70vw;
@@ -124,11 +108,6 @@
 
         &__header {
           padding: 0 2rem;
-        }
-      }
-
-      &__main {
-        &__img {
         }
       }
     }

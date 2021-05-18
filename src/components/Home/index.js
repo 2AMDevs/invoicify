@@ -17,10 +17,22 @@ const Home = () => (
       <div className="home__content__nav">
         <div className="home__content__nav__header">
           <h1 className="home__content__nav__header__brand">Invoicify</h1>
+          <a
+            className="home__content__nav__header__github"
+            href="https://github.com/2AMDevs/invoicify-app"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img
+              alt="github icon"
+              className="home__content__nav__header__github__img"
+              src="https://camo.githubusercontent.com/351dcb42fb2be38ad786b8e29aa8b6b9dc9c2c8905aa451a1074f1ca5a76ce64/68747470733a2f2f696d6167652e666c617469636f6e2e636f6d2f69636f6e732f7376672f3931392f3931393834372e737667"
+            />
+          </a>
           <Link to="/download">
             <Button
               secondary
-              className="home__content__nav__help-btn"
+              className="home__content__nav__download-btn"
             >
               Download
             </Button>
@@ -43,18 +55,6 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <a
-      className="home__gh-link"
-      href="https://github.com/2AMDevs/invoicify-app"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <img
-        alt="github icon"
-        className="home__gh-link__img"
-        src="https://camo.githubusercontent.com/351dcb42fb2be38ad786b8e29aa8b6b9dc9c2c8905aa451a1074f1ca5a76ce64/68747470733a2f2f696d6167652e666c617469636f6e2e636f6d2f69636f6e732f7376672f3931392f3931393834372e737667"
-      />
-    </a>
   </div>
 )
 
