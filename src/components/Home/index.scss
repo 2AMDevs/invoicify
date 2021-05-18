@@ -9,7 +9,8 @@
     &__nav {
       padding: 2rem 0;
       backdrop-filter: blur(5rem) hue-rotate(-5deg);
-      box-shadow: 0 0 3rem $color-black-op-80;
+      box-shadow: 0 0 2rem $color-black-op-50;
+      background-color: $color-black-op-50;
       font-size: 1.8rem;
       color: $color-white;
       font-weight: 800;
@@ -55,6 +56,46 @@
       }
     }
 
+    &__grad {
+      width: 100%;
+      height: 45rem;
+      position: absolute;
+      transform: skewY(2deg);
+      top: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+    }
+
+    &__wrapper {
+      color: $color-white;
+      padding: 5rem;
+
+      &__hero {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__perks {
+          width: 40rem;
+          height: 45rem;
+        }
+
+        h1 {
+          font-size: 3.3rem;
+          width: 30rem;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+          font-weight: 400;
+          width: 30rem;
+          line-height: 1.5;
+        }
+      }
+    }
+
     &__main {
       margin-top: 3rem;
       color: $color-white;
@@ -74,10 +115,12 @@
   .home {
     &__content {
       &__wrapper {
-      }
+        padding: 2rem;
 
-      &__perks {
-        .home-perks {
+        &__hero {
+          &__perks {
+            margin-top: 4rem;
+          }
         }
       }
 

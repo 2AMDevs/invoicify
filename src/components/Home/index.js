@@ -6,10 +6,10 @@ import HomePerks from './HomePerks'
 
 import './index.scss'
 
-const screenshots = [
-  'lock', 'personalize', 'preview',
-  'print', 'settings', 'update',
-]
+// const screenshots = [
+//   'lock', 'personalize', 'preview',
+//   'print', 'settings', 'update',
+// ]
 
 const Home = () => (
   <div className="home">
@@ -39,12 +39,19 @@ const Home = () => (
           </Link>
         </div>
       </div>
+      <div className="home__content__grad" />
       <div className="home__content__wrapper">
-        <div className="home__content__perks">
-          <HomePerks />
+        <div className="home__content__wrapper__hero">
+          <div className="home__content__wrapper__hero__text">
+            <h1>One Stop Solution for all your invoice needs</h1>
+            <h2>Highly configurable</h2>
+          </div>
+          <div className="home__content__wrapper__hero__perks">
+            <HomePerks />
+          </div>
         </div>
 
-        <div className="home__content__main">
+        {/* <div className="home__content__main">
           {screenshots.map((ss) => (
             <img
               className="home__content__main__img"
@@ -52,7 +59,7 @@ const Home = () => (
               src={`img/ss/${ss}.jpg`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
