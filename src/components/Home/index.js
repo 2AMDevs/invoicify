@@ -41,7 +41,7 @@ const Home = (props) => (
               className="home__content__wrapper__hero__download-btn"
               onClick={() => props.history.push('/download')}
             >
-              Download
+              Download Now
             </Button>
           </div>
           <div className="home__content__wrapper__hero__perks">
