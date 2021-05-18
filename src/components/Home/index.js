@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import { Button } from '../Elements'
 import HomePerks from './HomePerks'
@@ -11,7 +10,7 @@ import './index.scss'
 //   'print', 'settings', 'update',
 // ]
 
-const Home = () => (
+const Home = (props) => (
   <div className="home">
     <div className="home__content">
       <div className="home__content__nav">
@@ -29,14 +28,6 @@ const Home = () => (
               src="https://camo.githubusercontent.com/351dcb42fb2be38ad786b8e29aa8b6b9dc9c2c8905aa451a1074f1ca5a76ce64/68747470733a2f2f696d6167652e666c617469636f6e2e636f6d2f69636f6e732f7376672f3931392f3931393834372e737667"
             />
           </a>
-          <Link to="/download">
-            <Button
-              secondary
-              className="home__content__nav__download-btn"
-            >
-              Download
-            </Button>
-          </Link>
         </div>
       </div>
       <div className="home__content__grad" />
@@ -45,6 +36,13 @@ const Home = () => (
           <div className="home__content__wrapper__hero__text">
             <h1>One Stop Solution for all your invoice needs</h1>
             <h2>Highly configurable</h2>
+            <Button
+              secondary
+              className="home__content__wrapper__hero__download-btn"
+              onClick={() => props.history.push('/download')}
+            >
+              Download
+            </Button>
           </div>
           <div className="home__content__wrapper__hero__perks">
             <HomePerks />

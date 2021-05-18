@@ -31,28 +31,20 @@
         }
 
         &__github {
-          position: absolute;
-          right: 19rem;
-          height: 2rem;
-          width: 2rem;
-          border-radius: 2rem;
-          border: solid 0.2rem $color-white;
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
+          border: solid 0.4rem $color-white;
           display: flex;
           justify-content: center;
           align-items: center;
           box-shadow: 0 0 0.5rem $color-black;
 
           &__img {
-            height: 1.5rem;
-            width: 1.5rem;
+            height: 3.5rem;
+            width: 3.5rem;
           }
         }
-      }
-
-      &__download-btn {
-        border-radius: 5rem;
-        padding: 1rem 3rem;
-        background-color: $color-purple-op-80;
       }
     }
 
@@ -80,6 +72,12 @@
           height: 45rem;
         }
 
+        &__download-btn {
+          border-radius: 5rem;
+          padding: 1rem 3rem;
+          background-color: $color-purple-op-80;
+        }
+
         h1 {
           font-size: 3.3rem;
           width: 30rem;
@@ -92,6 +90,7 @@
           font-weight: 400;
           width: 30rem;
           line-height: 1.5;
+          margin: 2rem 0;
         }
       }
     }
@@ -118,6 +117,10 @@
         padding: 2rem;
 
         &__hero {
+          &__download-btn {
+            padding: 0.5rem 1rem;
+          }
+
           &__perks {
             margin-top: 4rem;
           }
@@ -127,10 +130,6 @@
       &__nav {
         font-size: 1.5rem;
         padding: 2rem 0;
-
-        &__download-btn {
-          padding: 0.5rem 1rem;
-        }
 
         &__header {
           padding: 0 2rem;
