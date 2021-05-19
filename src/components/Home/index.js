@@ -15,7 +15,14 @@ const Home = (props) => (
     <div className="home__content">
       <div className="home__content__nav">
         <div className="home__content__nav__header">
-          <h1 className="home__content__nav__header__brand">Invoicify</h1>
+          <div className="home__content__nav__header__brand">
+            <img
+              className="home__content__nav__header__brand__logo"
+              src="/favicon.png"
+              alt="Invoicify brand logo"
+            />
+            Invoicify
+          </div>
           <a
             className="home__content__nav__header__github"
             href="https://github.com/2AMDevs/invoicify-app"

@@ -28,7 +28,16 @@
         width: 100%;
 
         &__brand {
-          letter-spacing: 0.3rem;
+          letter-spacing: 0.032rem;
+          font-size: 3rem;
+          display: flex;
+          font-weight: 300;
+          align-items: center;
+
+          &__logo {
+            height: 3.4rem;
+            margin-right: 1rem;
+          }
         }
 
         &__github {
