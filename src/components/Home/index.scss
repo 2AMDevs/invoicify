@@ -1,59 +1,18 @@
-@import '../../sass/abstracts.scss';
+@import "../../sass/abstracts.scss";
 
 .home {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  position: absolute;
-
-  &__gh-link {
-    position: absolute;
-    bottom: 2rem;
-    right: 5rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 4.5rem;
-    background-color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0.5rem $color-black;
-
-    &__img {
-      height: 4rem;
-      width: 4rem;
-    }
-  }
-
-  &__bg-img {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: -1;
-    animation:
-      scaleDown 2.5s forwards,
-      blurDown 2s forwards;
-  }
-
   &__content {
     position: absolute;
+    height: 100%;
+    overflow: auto;
     width: 100%;
 
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-    }
-
-    &__perks {
-      height: 60rem;
-      width: 50%;
-    }
-
     &__nav {
-      padding: 5rem 0;
+      padding: 2rem 0;
       backdrop-filter: blur(5rem) hue-rotate(-5deg);
-      box-shadow: 0 0 3rem $color-black-op-80;
-      font-size: 2rem;
+      box-shadow: 0 0 2rem $color-black-op-50;
+      background-color: $color-black-op-50;
+      font-size: 1.8rem;
       color: $color-white;
       font-weight: 800;
       display: flex;
@@ -63,19 +22,91 @@
       &__header {
         display: flex;
         align-items: center;
-        padding: 0 5rem;
+        padding: 0 15vw;
         justify-content: space-between;
+        position: relative;
         width: 100%;
 
         &__brand {
-          letter-spacing: 0.3rem;
+          letter-spacing: 0.032rem;
+          font-size: 3rem;
+          display: flex;
+          font-weight: 300;
+          align-items: center;
+
+          &__logo {
+            height: 3.4rem;
+            margin-right: 1rem;
+          }
+        }
+
+        &__github {
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
+          border: solid 0.4rem $color-white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 0.5rem $color-black;
+
+          &__img {
+            height: 3.5rem;
+            width: 3.5rem;
+          }
         }
       }
+    }
 
-      &__help-btn {
-        border-radius: 5rem;
-        padding: 1rem 3rem;
-        background-color: $color-purple-op-80;
+    &__grad {
+      width: 100%;
+      height: 55rem;
+      position: absolute;
+      transform: skewY(-3deg);
+      top: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+    }
+
+    &__wrapper {
+      color: $color-white;
+      padding: 5rem 15vw;
+
+      &__hero {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-transform: capitalize;
+
+        &__perks {
+          width: 40rem;
+          height: 45rem;
+        }
+
+        &__download-btn {
+          padding: 1rem 3rem;
+          background-color: $color-purple-op-80;
+          font-size: 2.4rem;
+          border-radius: 0.7rem;
+          line-height: 1.5;
+          letter-spacing: 0.032rem;
+          font-weight: 600;
+        }
+
+        h1 {
+          font-size: 3.3rem;
+          width: 30rem;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+          font-weight: 400;
+          width: 30rem;
+          line-height: 1.5;
+          margin: 2rem 0;
+        }
       }
     }
 
@@ -85,43 +116,10 @@
       display: flex;
       flex-direction: column;
 
-      &__download-section {
-        margin-top: 3rem;
-        width: 15rem;
-        padding: 1rem 1rem 1rem 5rem;
-
-        &__dwnld-btn {
-          border-radius: 5rem;
-          padding: 1rem 3rem;
-          background-color: $color-magenta-op-80;
-          font-size: 2rem;
-        }
-      }
-
-      &__text {
-        display: flex;
-        flex-direction: column;
-        backdrop-filter: blur(5rem) hue-rotate(-5deg);
-        padding: 1rem 1rem 1rem 5rem;
-        box-shadow: 0 0 3rem $color-black-op-80;
-
-        &__title {
-          font-size: 5rem;
-          font-weight: 300;
-          color: $color-white-op-80;
-        }
-
-        &__sub-title {
-          font-size: 5rem;
-          font-weight: 600;
-          color: $color-white-op-80;
-
-          &--small {
-            font-size: 3rem;
-            font-weight: 300;
-            color: $color-white-op-80;
-          }
-        }
+      &__img {
+        width: 70vw;
+        height: auto;
+        margin-right: 2rem;
       }
     }
   }
@@ -131,45 +129,30 @@
   .home {
     &__content {
       &__wrapper {
-        flex-direction: column;
-      }
+        padding: 2rem;
 
-      &__perks {
-        width: 100%;
+        &__hero {
+          &__download-btn {
+            padding: 0.5rem 1rem;
+            font-size: 1.4rem;
+          }
+
+          &__perks {
+            margin-top: 4rem;
+          }
+        }
       }
 
       &__nav {
         font-size: 1.5rem;
         padding: 2rem 0;
 
-        &__help-btn {
-          padding: 0.5rem 1rem;
-        }
-
         &__header {
           padding: 0 2rem;
-        }
-      }
 
-      &__main {
-        &__text {
-          width: 80%;
-          padding-left: 2rem;
-
-          &__title, &__sub-title {
-            font-size: 2.4rem;
-
-            &--small {
-              font-size: 2rem;
-            }
+          &__github {
+            right: 12rem;
           }
-        }
-
-        &__download-section {
-          padding-left: 0rem;
-          width: 100%;
-          display: flex;
-          justify-content: center;
         }
       }
     }
