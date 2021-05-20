@@ -30,6 +30,12 @@
         border-radius: 2rem;
         padding: 0.2rem;
         box-shadow: $btn-focus-shadow;
+        transition: filter 0.5s ease-in-out;
+        will-change: filter;
+
+        &:hover {
+          filter: hue-rotate(40deg);
+        }
       }
     }
   }
