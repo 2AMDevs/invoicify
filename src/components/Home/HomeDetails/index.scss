@@ -26,10 +26,10 @@
 
       &__img {
         max-width: 70%;
-        border: solid 1rem #6a91ff;
+        border: solid 0.3rem $color-primary;
         border-radius: 2rem;
-        box-shadow: inset 0 0 5rem $color-primary, inset 0 0 5rem $color-primary,
-          inset 0 0 5rem $color-primary;
+        padding: 0.2rem;
+        box-shadow: $btn-focus-shadow;
       }
     }
   }
