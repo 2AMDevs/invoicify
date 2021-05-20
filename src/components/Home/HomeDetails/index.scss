@@ -2,6 +2,7 @@
 
 .home-details {
   padding: 10rem 0;
+
   &__container {
     &__section {
       margin-bottom: 5rem;
@@ -18,8 +19,9 @@
         color: $color-grey;
         font-size: 1.8rem;
         letter-spacing: 0.032rem;
+        text-align: center;
         text-transform: capitalize;
-        margin: 0 2rem;
+        margin: 0 3rem;
       }
 
       &__img {
@@ -36,5 +38,25 @@
 @media screen and (max-width: 860px) {
   .home-details {
     padding: 0;
+
+    &__container {
+      &__section {
+        flex-direction: column;
+
+        &.odd {
+          flex-direction: column;
+        }
+
+        &__header {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        &__img {
+          max-width: 90%;
+        }
+      }
+    }
   }
 }
