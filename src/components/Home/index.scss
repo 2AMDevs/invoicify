@@ -1,15 +1,20 @@
 @import "../../sass/abstracts.scss";
 
 .home {
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+
   &__content {
     position: absolute;
     height: 100%;
-    overflow: auto;
+    overflow: hidden auto;
     width: 100%;
 
     &__nav {
       padding: 2rem 0;
-      backdrop-filter: blur(5rem) hue-rotate(-5deg);
+      backdrop-filter: blur(10rem);
       box-shadow: 0 0 2rem $color-black-op-50;
       background-color: $color-black-op-50;
       font-size: 1.8rem;
@@ -59,13 +64,22 @@
     }
 
     &__grad {
-      width: 100%;
-      height: 55rem;
+      width: 140vw;
+      left: -20vw;
+      top: -5rem;
+      height: 65rem;
+      position: absolute;
+      border-radius: 35%;
       position: absolute;
       transform: skewY(-3deg);
-      top: 0;
       z-index: -1;
-      background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+      background: linear-gradient(
+          321.82deg,
+          rgba(65, 129, 255, 0.1),
+          rgba(68, 117, 255, 0.2) 45%,
+          rgba(33, 242, 255, 0.4) 75%
+        ),
+        #7196ff;
     }
 
     &__wrapper {
@@ -85,18 +99,22 @@
 
         &__download-btn {
           padding: 1rem 3rem;
-          background-color: $color-purple-op-80;
-          font-size: 2.4rem;
+          background: linear-gradient(266deg,#5936d6, #42a9f2);
+          font-size: 2.2rem;
           border-radius: 0.7rem;
           line-height: 1.5;
           letter-spacing: 0.032rem;
           font-weight: 600;
+
+          &:hover {
+            background: linear-gradient(266deg,#42a9f2, #5936d6);
+          }
         }
 
         h1 {
-          font-size: 3.3rem;
-          width: 30rem;
-          font-weight: 600;
+          font-size: 3.2rem;
+          width: 35rem;
+          font-weight: 500;
           line-height: 1.5;
         }
 
@@ -134,7 +152,7 @@
         &__hero {
           &__download-btn {
             padding: 0.5rem 1rem;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
           }
 
           &__perks {

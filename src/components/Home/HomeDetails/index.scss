@@ -1,0 +1,99 @@
+@import "../../../sass/abstracts.scss";
+
+.home-details {
+  padding: 10rem 0;
+
+  &__container {
+    &__section {
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &.odd {
+        flex-direction: row-reverse;
+      }
+
+      &__header {
+        color: $color-grey;
+        font-size: 1.8rem;
+        letter-spacing: 0.032rem;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 3rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: #{randomNum(0, 2)}rem;
+          right: #{randomNum(0, 2)}rem;
+          width: #{randomNum(3, 6)}rem;
+          height: 3rem;
+          z-index: -1;
+          opacity: 0.3;
+          border-radius: 3rem;
+          background-color: $color-primary;
+          transform: rotate(12deg);
+          filter: hue-rotate(#{randomNum(10, 150)}deg);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: #{randomNum(0, 2)}rem;
+          left: #{randomNum(0, 2)}rem;
+          width: #{randomNum(10, 12)}rem;
+          height: 3rem;
+          z-index: -1;
+          opacity: 0.2;
+          border-radius: 5rem;
+          background-color: $color-orange;
+          transform: rotate(-12deg);
+          filter: hue-rotate(#{randomNum(10, 150)}deg);
+        }
+      }
+
+      &__img {
+        max-width: 70%;
+        border: solid 0.3rem $color-primary;
+        border-radius: 2rem;
+        padding: 0.2rem;
+        box-shadow: $btn-focus-shadow;
+        transition: filter 0.5s ease-in-out;
+        will-change: filter;
+
+        &:hover {
+          filter: hue-rotate(40deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .home-details {
+    padding: 0;
+
+    &__container {
+      &__section {
+        flex-direction: column;
+
+        &.odd {
+          flex-direction: column;
+        }
+
+        &__header {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        &__img {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}

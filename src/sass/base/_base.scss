@@ -9,9 +9,18 @@
 
 html {
   font-size: 62.5% !important; // 1rem = 10px
-  background: $color-grey-dark;
+  background: $color-ice-white;
 }
 
 body {
   font-size: 1.4rem;
+}
+
+.noselect {
+  -webkit-user-select: none;    /* Safari */
+  -webkit-touch-callout: none;  /* iOS Safari */
+  -khtml-user-select: none;     /* Konqueror HTML */
+  -ms-user-select: none;        /* Internet Explorer/Edge */
+  -moz-user-select: none;       /* Old versions of Firefox */
+   user-select: none;           /* Non-prefixed version*/
 }
