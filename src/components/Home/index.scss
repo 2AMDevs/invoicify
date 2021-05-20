@@ -99,18 +99,22 @@
 
         &__download-btn {
           padding: 1rem 3rem;
-          background-color: $color-purple-op-80;
-          font-size: 2.4rem;
+          background: linear-gradient(266deg,#5936d6, #42a9f2);
+          font-size: 2.2rem;
           border-radius: 0.7rem;
           line-height: 1.5;
           letter-spacing: 0.032rem;
           font-weight: 600;
+
+          &:hover {
+            background: linear-gradient(266deg,#42a9f2, #5936d6);
+          }
         }
 
         h1 {
-          font-size: 3.3rem;
-          width: 30rem;
-          font-weight: 600;
+          font-size: 3.2rem;
+          width: 35rem;
+          font-weight: 500;
           line-height: 1.5;
         }
 
@@ -148,7 +152,7 @@
         &__hero {
           &__download-btn {
             padding: 0.5rem 1rem;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
           }
 
           &__perks {

@@ -6,12 +6,14 @@ import HomePerks from './HomePerks'
 
 import './index.scss'
 
+const h1Text = 'Modern ✨ & Fast ⚡ Billing Solution for emerging business'
+
 const Home = (props) => (
   <div className="home">
     <div className="home__content">
       <div className="home__content__nav">
         <div className="home__content__nav__header">
-          <div className="home__content__nav__header__brand">
+          <div className="home__content__nav__header__brand noselect">
             <img
               className="home__content__nav__header__brand__logo"
               src="/favicon.png"
@@ -37,14 +39,19 @@ const Home = (props) => (
       <div className="home__content__wrapper">
         <div className="home__content__wrapper__hero">
           <div className="home__content__wrapper__hero__text">
-            <h1>One Stop Solution for all your invoice needs</h1>
-            <h2>Highly configurable</h2>
+            <h1>
+              {h1Text}
+            </h1>
+            <h2>
+              Generate, store and manage Invoices in a quicker and safer way.
+              It lets you stick to your preferences and preview invoices on-the-go.
+            </h2>
             <Button
               secondary
-              className="home__content__wrapper__hero__download-btn"
+              className="home__content__wrapper__hero__download-btn noselect"
               onClick={() => props.history.push('/download')}
             >
-              Download Now
+              Try it now!
             </Button>
           </div>
           <div className="home__content__wrapper__hero__perks">
