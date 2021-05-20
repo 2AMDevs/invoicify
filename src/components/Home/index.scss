@@ -9,7 +9,7 @@
 
     &__nav {
       padding: 2rem 0;
-      backdrop-filter: blur(5rem) hue-rotate(-5deg);
+      backdrop-filter: blur(10rem);
       box-shadow: 0 0 2rem $color-black-op-50;
       background-color: $color-black-op-50;
       font-size: 1.8rem;
@@ -68,7 +68,13 @@
       position: absolute;
       transform: skewY(-3deg);
       z-index: -1;
-      background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+      background: linear-gradient(
+          321.82deg,
+          rgba(65, 129, 255, 0.1),
+          rgba(68, 117, 255, 0.2) 45%,
+          rgba(33, 242, 255, 0.4) 75%
+        ),
+        #7196ff;
     }
 
     &__wrapper {
