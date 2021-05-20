@@ -1,14 +1,10 @@
 import React from 'react'
 
 import { Button } from '../Elements'
+import HomeDetails from './HomeDetails'
 import HomePerks from './HomePerks'
 
 import './index.scss'
-
-// const screenshots = [
-//   'lock', 'personalize', 'preview',
-//   'print', 'settings', 'update',
-// ]
 
 const Home = (props) => (
   <div className="home">
@@ -55,16 +51,7 @@ const Home = (props) => (
             <HomePerks />
           </div>
         </div>
-
-        {/* <div className="home__content__main">
-          {screenshots.map((ss) => (
-            <img
-              className="home__content__main__img"
-              alt={ss}
-              src={`img/ss/${ss}.jpg`}
-            />
-          ))}
-        </div> */}
+        <HomeDetails />
       </div>
     </div>
   </div>

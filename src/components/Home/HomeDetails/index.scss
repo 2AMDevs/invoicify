@@ -1,0 +1,9 @@
+@import "../../../sass/abstracts.scss";
+
+.home-details {
+  &__container {
+    &__img {
+      max-width: 70vw;
+    }
+  }
+}
