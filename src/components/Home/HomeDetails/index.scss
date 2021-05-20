@@ -1,9 +1,16 @@
 @import "../../../sass/abstracts.scss";
 
 .home-details {
+  padding: 10rem 0;
   &__container {
     &__img {
-      max-width: 70vw;
+      max-width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .home-details {
+    padding: 0;
   }
 }
