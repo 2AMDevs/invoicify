@@ -15,7 +15,6 @@
       }
 
       &__header {
-        flex: 1;
         color: $color-grey;
         font-size: 1.8rem;
         letter-spacing: 0.032rem;
@@ -24,7 +23,6 @@
       }
 
       &__img {
-        flex: 2;
         max-width: 70%;
         border: solid 1rem #6a91ff;
         border-radius: 2rem;
