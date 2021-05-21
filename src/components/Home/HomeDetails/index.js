@@ -16,7 +16,7 @@ const HomeDetails = () => (
     <div className="home-details__container">
       {screenshots.map((ss, index) => (
         <div className={`home-details__container__section ${index % 2 !== 0 ? 'odd' : ''}`}>
-          <h1 className="home-details__container__section__header">{ss.header}</h1>
+          <h1 className={`home-details__container__section__header random-art-${Math.floor(Math.random() * 6) + 1}`}>{ss.header}</h1>
           <img
             className="home-details__container__section__img"
             alt={ss}

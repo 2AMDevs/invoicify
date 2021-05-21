@@ -23,36 +23,30 @@
         text-transform: capitalize;
         margin: 0 3rem;
         position: relative;
+      }
 
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: #{randomNum(0, 2)}rem;
-          right: #{randomNum(0, 2)}rem;
-          width: #{randomNum(3, 6)}rem;
-          height: 3rem;
-          z-index: -1;
-          opacity: 0.3;
-          border-radius: 3rem;
-          background-color: $color-primary;
-          transform: rotate(12deg);
-          filter: hue-rotate(#{randomNum(10, 150)}deg);
-        }
+      .random-art-1 {
+        @include random-bef-aft;
+      }
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: #{randomNum(0, 2)}rem;
-          left: #{randomNum(0, 2)}rem;
-          width: #{randomNum(10, 12)}rem;
-          height: 3rem;
-          z-index: -1;
-          opacity: 0.2;
-          border-radius: 5rem;
-          background-color: $color-orange;
-          transform: rotate(-12deg);
-          filter: hue-rotate(#{randomNum(10, 150)}deg);
-        }
+      .random-art-2 {
+        @include random-bef-aft;
+      }
+
+      .random-art-3 {
+        @include random-bef-aft;
+      }
+
+      .random-art-4 {
+        @include random-bef-aft;
+      }
+
+      .random-art-5 {
+        @include random-bef-aft;
+      }
+
+      .random-art-6 {
+        @include random-bef-aft;
       }
 
       &__img {
