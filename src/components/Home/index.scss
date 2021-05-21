@@ -117,16 +117,12 @@
 
         &__download-btn {
           padding: 1rem 3rem;
-          background: linear-gradient(266deg, #5936d6, #11c1bf);
+          background: $color-purple;
           font-size: 2.2rem;
           border-radius: 0.7rem;
           line-height: 1.5;
           letter-spacing: 0.032rem;
           font-weight: 600;
-
-          &:hover {
-            background: linear-gradient(266deg, #11c1bf, #5936d6);
-          }
         }
 
         h1 {
