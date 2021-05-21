@@ -58,6 +58,11 @@ const Home = (props) => (
             <HomePerks />
           </div>
         </div>
+        <img
+          className="home__content__wrapper__img"
+          src="img/ss/invoicify-in-laptop.png"
+          alt="invoicify in laptop"
+        />
         <HomeDetails />
       </div>
     </div>
