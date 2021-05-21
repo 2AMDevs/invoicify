@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from '../Elements'
 import HomeDetails from './HomeDetails'
-import HomePerks from './HomePerks'
+// import HomePerks from './HomePerks'
 
 import './index.scss'
 
@@ -42,9 +42,9 @@ const Home = (props) => (
             <h1>
               {h1Text}
             </h1>
+            <div className="dividerdark" />
             <h2>
               Generate, store and manage Invoices in a quicker and safer way.
-              It lets you stick to your preferences and preview invoices on-the-go.
             </h2>
             <Button
               secondary
@@ -54,9 +54,11 @@ const Home = (props) => (
               Try it now!
             </Button>
           </div>
-          <div className="home__content__wrapper__hero__perks">
-            <HomePerks />
-          </div>
+          <img
+            className="home__content__wrapper__hero-img"
+            src="img/ss/invoicify-in-laptop.png"
+            alt="invoicify in laptop"
+          />
         </div>
         <HomeDetails />
       </div>

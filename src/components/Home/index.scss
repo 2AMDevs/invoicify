@@ -85,6 +85,24 @@
     &__wrapper {
       color: $color-white;
       padding: 5rem 15vw;
+      position: relative;
+
+      .home-details {
+        margin-top: 15rem;
+      }
+
+      &__hero-img {
+        position: absolute;
+        right: -15rem;
+        top: 0;
+        width: clamp(75rem, 70vw, 104rem);
+
+        -webkit-flex: 0 0.5 auto;
+        flex: 0 0.5 auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
 
       &__hero {
         display: flex;
@@ -92,38 +110,47 @@
         flex-wrap: wrap;
         text-transform: capitalize;
 
-        &__perks {
-          width: 40rem;
-          height: 45rem;
-        }
+        // &__perks {
+        //   width: 60rem;
+        //   height: 45rem;
+        // }
 
         &__download-btn {
           padding: 1rem 3rem;
-          background: linear-gradient(266deg,#5936d6, #42a9f2);
+          background: $color-purple;
           font-size: 2.2rem;
           border-radius: 0.7rem;
           line-height: 1.5;
           letter-spacing: 0.032rem;
           font-weight: 600;
-
-          &:hover {
-            background: linear-gradient(266deg,#42a9f2, #5936d6);
-          }
         }
 
         h1 {
-          font-size: 3.2rem;
+          font-size: 3rem;
           width: 35rem;
+          letter-spacing: 0.225rem;
           font-weight: 500;
           line-height: 1.5;
+          text-shadow: 0 0 0.8rem $color-black-op-80;
+        }
+
+        .dividerdark {
+          width: 14rem;
+          height: 0.6rem;
+          margin-top: 2rem;
+          border-radius: 1rem;
+          background-color: $color-purple-op-50;
         }
 
         h2 {
           font-size: 1.6rem;
           font-weight: 400;
           width: 30rem;
+          letter-spacing: 0.225rem;
           line-height: 1.5;
-          margin: 2rem 0;
+          margin: 3rem 0;
+          line-height: 188%;
+          text-shadow: 0 0 0.8rem $color-black-op-80;
         }
       }
     }
@@ -143,9 +170,25 @@
   }
 }
 
+@media screen and (min-width: 860px) and (max-width: 950px) {
+  .home {
+    &__content {
+      &__wrapper {
+        &__hero-img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .home {
     &__content {
+      &__grad {
+        height: 55rem;
+      }
+
       &__wrapper {
         padding: 2rem;
 
@@ -154,10 +197,10 @@
             padding: 0.5rem 1rem;
             font-size: 1.3rem;
           }
+        }
 
-          &__perks {
-            margin-top: 4rem;
-          }
+        &__hero-img {
+          display: none;
         }
       }
 
