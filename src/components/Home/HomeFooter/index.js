@@ -13,7 +13,15 @@ const HomeFooter = () => (
         <div className="home-footer__flag__green" />
       </div>
       <div className="home-footer__right__company">
-        © 2AM Devs
+        ©
+        <a
+          className="home-footer__right__company__name"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/2AMDevs"
+        >
+          2AM Devs
+        </a>
       </div>
     </div>
   </div>

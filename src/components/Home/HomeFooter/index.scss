@@ -11,10 +11,11 @@
   &__right {
     padding: 2rem 4rem;
 
-    &__company {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      letter-spacing: 0.225rem;
+    &__company,
+    &__company__name {
+      font-size: 1.4rem;
+      color: $color-white;
+      letter-spacing: 0.285rem;
       font-weight: 500;
       line-height: 1.5;
     }
@@ -25,13 +26,14 @@
   }
 
   &__flag {
+    margin-bottom: 2rem;
     display: flex;
 
     &__saffron {
       width: 3rem;
       background-color: #ff9933;
       border-radius: 0.15rem;
-      height: 0.6rem;
+      height: 0.5rem;
     }
 
     &__white {
@@ -39,14 +41,14 @@
       width: 3rem;
       background-color: white;
       margin: 0 1rem;
-      height: 0.6rem;
+      height: 0.5rem;
     }
 
     &__green {
       width: 3rem;
       background-color: #138808;
       border-radius: 0.15rem;
-      height: 0.6rem;
+      height: 0.5rem;
     }
   }
 }
