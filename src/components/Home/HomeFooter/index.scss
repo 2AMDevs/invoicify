@@ -22,11 +22,30 @@
   }
 
   &__left {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
+
+    &__links {
+      color: $color-white;
+      display: flex;
+      font-size: 1.2rem;
+      color: $color-white;
+      letter-spacing: 0.285rem;
+      font-weight: 500;
+      line-height: 1.5;
+      flex-direction: column;
+
+      &__link {
+        font-size: 1rem;
+        color: $color-white;
+        letter-spacing: 0.032rem;
+        line-height: 1.5;
+        margin-top: 0.8rem;
+      }
+    }
   }
 
   &__flag {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
     display: flex;
 
     &__saffron {
