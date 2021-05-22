@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 import { Button, Loader } from '../Elements'
 
@@ -25,6 +26,13 @@ const Download = () => {
 
   return (
     <div className="download-container">
+      <Helmet>
+        <title>Download Invoicify</title>
+        <meta
+          name="description"
+          content="Download and Try Invoicify for free"
+        />
+      </Helmet>
       <img
         className="download-container__bg-img"
         src="img/download/background.png"
@@ -39,7 +47,10 @@ const Download = () => {
               Get Invoicify for your PC
             </span>
             <div className="download-box__content__input-section">
-              <a href={latestAsset.browser_download_url} download>
+              <a
+                href={latestAsset.browser_download_url}
+                download
+              >
                 <Button
                   type="submit"
                   primary
