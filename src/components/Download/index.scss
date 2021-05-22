@@ -1,4 +1,4 @@
-@import '../../sass/abstracts.scss';
+@import "../../sass/abstracts.scss";
 
 .download-container {
   height: 100vh;
@@ -9,12 +9,22 @@
   overflow: hidden;
   position: absolute;
 
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $color-black-op-80;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   &__bg-img {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
     z-index: -1;
-    filter: blur(0.5rem);
     animation: scaleDown 2.5s forwards;
   }
 
@@ -29,6 +39,7 @@
     flex-direction: row;
     overflow: hidden;
     color: $color-white;
+    z-index: 1;
 
     .download-box {
       height: 100%;
@@ -37,7 +48,6 @@
       justify-content: center;
       background: $color-grey-dark;
       transition: margin 0.4s ease-in-out;
-
 
       &__content {
         width: 100%;
