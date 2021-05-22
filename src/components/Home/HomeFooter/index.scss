@@ -1,0 +1,53 @@
+@import "../../../sass/abstracts.scss";
+
+.home-footer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-grey-dark;
+  color: $color-white;
+
+  &__right {
+    padding: 2rem 4rem;
+
+    &__company {
+      font-size: 1.2rem;
+      letter-spacing: 0.225rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+
+  &__left {
+    padding: 2rem 4rem;
+  }
+
+  &__flag {
+    display: flex;
+
+    &__saffron {
+      width: 3rem;
+      background-color: #ff9933;
+      height: 0.6rem;
+    }
+
+    &__white {
+      width: 3rem;
+      background-color: white;
+      margin: 0 1rem;
+      height: 0.6rem;
+    }
+
+    &__green {
+      width: 3rem;
+      background-color: #138808;
+      height: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .home-footer {
+  }
+}

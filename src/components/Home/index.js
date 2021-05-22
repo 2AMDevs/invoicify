@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Button } from '../Elements'
 import HomeDetails from './HomeDetails'
+import HomeFooter from './HomeFooter'
 // import HomePerks from './HomePerks'
 
 import './index.scss'
@@ -62,6 +63,7 @@ const Home = (props) => (
         </div>
         <HomeDetails />
       </div>
+      <HomeFooter />
     </div>
   </div>
 )
