@@ -20,7 +20,7 @@
   }
 
   &__left {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
   }
 
   &__flag {
@@ -29,10 +29,12 @@
     &__saffron {
       width: 3rem;
       background-color: #ff9933;
+      border-radius: 0.15rem;
       height: 0.6rem;
     }
 
     &__white {
+      border-radius: 0.15rem;
       width: 3rem;
       background-color: white;
       margin: 0 1rem;
@@ -42,6 +44,7 @@
     &__green {
       width: 3rem;
       background-color: #138808;
+      border-radius: 0.15rem;
       height: 0.6rem;
     }
   }
@@ -49,5 +52,12 @@
 
 @media screen and (max-width: 860px) {
   .home-footer {
+    &__right {
+      padding: 2rem;
+    }
+
+    &__left {
+      padding: 2rem;
+    }
   }
 }
