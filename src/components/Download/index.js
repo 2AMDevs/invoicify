@@ -15,7 +15,7 @@ const Download = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const data = await fetch('https://api.github.com/repos/microsoft/terminal/releases')
+      const data = await fetch('https://api.github.com/repos/2AMDevs/invoicify-app/releases')
       const jsonData = await data.json()
       setRn(jsonData)
       setLatestAsset(jsonData[0].assets[0])

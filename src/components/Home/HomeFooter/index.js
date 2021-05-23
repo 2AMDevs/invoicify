@@ -27,7 +27,10 @@ const HomeFooter = () => (
     </div>
     <div className="home-footer__right">
 
-      <div className="home-footer__flag">
+      <div
+        className="home-footer__flag"
+        title="Made with 🧡 in India"
+      >
         <div className="home-footer__flag__saffron" />
         <div className="home-footer__flag__white" />
         <div className="home-footer__flag__green" />
