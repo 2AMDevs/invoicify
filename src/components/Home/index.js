@@ -22,18 +22,32 @@ const Home = (props) => (
             />
             Invoicify
           </div>
-          <a
-            className="home__content__nav__header__github"
-            href="https://github.com/2AMDevs/invoicify-app"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              alt="github icon"
-              className="home__content__nav__header__github__img"
-              src="/img/github.png"
-            />
-          </a>
+          <div className="home__content__nav__header__right">
+            <a
+              className="home__content__nav__header__github"
+              href="https://github.com/2AMDevs/invoicify-app"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                alt="github icon"
+                className="home__content__nav__header__github__img"
+                src="/img/github.png"
+              />
+            </a>
+            <a
+              className="home__content__nav__header__discord"
+              href="https://discord.gg/UgvYpNrHa6"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                alt="discord icon"
+                className="home__content__nav__header__discord__img"
+                src="/img/discord.png"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="home__content__grad" />

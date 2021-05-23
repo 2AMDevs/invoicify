@@ -32,6 +32,12 @@
         position: relative;
         width: 100%;
 
+        &__right {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
         &__brand {
           letter-spacing: 0.032rem;
           font-size: 3rem;
@@ -51,8 +57,22 @@
           border-radius: 3.5rem;
 
           &__img {
-            height: 3.5rem;
-            width: 3.5rem;
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+
+        &__discord {
+          height: 3.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3.5rem;
+          border-radius: 50%;
+          margin-left: 1rem;
+
+          &__img {
+            width: 3rem;
           }
         }
       }
@@ -68,6 +88,7 @@
       position: absolute;
       transform: skewY(-3deg);
       z-index: -1;
+      box-shadow: 0 0 0.6rem $color-black-op-80;
       background: linear-gradient(
           321.82deg,
           rgba(65, 129, 255, 0.1),
@@ -201,13 +222,41 @@
 
       &__nav {
         font-size: 1.5rem;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
 
         &__header {
           padding: 0 2rem;
 
+          &__brand {
+            font-size: 2rem;
+
+            &__logo {
+              height: 2rem;
+            }
+          }
+
           &__github {
-            right: 12rem;
+            height: 2.5rem;
+            width: 2.5rem;
+
+            &__img {
+              height: 2.5rem;
+              width: 2.5rem;
+            }
+          }
+
+          &__discord {
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.5rem;
+            border-radius: 50%;
+            margin-left: 1rem;
+
+            &__img {
+              width: 2.5rem;
+            }
           }
         }
       }

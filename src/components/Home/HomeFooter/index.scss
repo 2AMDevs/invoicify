@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-grey-dark;
+  box-shadow: 0 0 0.6rem $color-black-op-80;
   color: $color-white;
 
   &__right {
@@ -27,7 +28,7 @@
     &__links {
       color: $color-white;
       display: flex;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: $color-white;
       letter-spacing: 0.285rem;
       font-weight: 500;
@@ -35,39 +36,39 @@
       flex-direction: column;
 
       &__link {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: $color-white;
-        letter-spacing: 0.032rem;
+        letter-spacing: 0.062rem;
         line-height: 1.5;
-        margin-top: 0.8rem;
+        margin-top: 0.5rem;
       }
     }
   }
 
   &__flag {
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
     display: flex;
 
     &__saffron {
       width: 3rem;
       background-color: #ff9933;
-      border-radius: 0.15rem;
-      height: 0.5rem;
+      border-radius: 0.1rem;
+      height: 0.6rem;
     }
 
     &__white {
-      border-radius: 0.15rem;
+      border-radius: 0.1rem;
       width: 3rem;
       background-color: white;
       margin: 0 1rem;
-      height: 0.5rem;
+      height: 0.6rem;
     }
 
     &__green {
       width: 3rem;
       background-color: #138808;
-      border-radius: 0.15rem;
-      height: 0.5rem;
+      border-radius: 0.1rem;
+      height: 0.6rem;
     }
   }
 }
